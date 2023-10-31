@@ -1,11 +1,11 @@
 name: Integración continua con Node.js
 
 on:
-  pull_request:
-    branches: [master]
+  push:
+    branches: '*'
 
 jobs:
-  ci_to_master:
+  ci:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -13,4 +13,4 @@ jobs:
         node-version: 10
       - run: npm ci
       - run: npm run jest
-      - run: npm run build 
+      - run: npm run build
