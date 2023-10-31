@@ -3,7 +3,7 @@ name: Integración Continua con Pruebas JS
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   ci_to_master:
