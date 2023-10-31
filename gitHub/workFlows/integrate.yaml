@@ -1,16 +1,24 @@
-neme: integracion continua con node js
+name: Integración Continua con Pruebas JS
 
-on: 
-  pull_request:
-    branches: [master]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-ci_to_master:
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/ceckout@v2
-    - use: actions/setup-node@v2
-      node-version: 10
-    - run: npm ci
-    - run: npm test
-    - run: npm run build
+  ci_to_master:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v2
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14  # Se recomienda usar una versión más actual de Node.js, como la 14.
+
+      - name: Instalar dependencias
+        run: npm ci
+      - name: Ejecutar pruebas
+        run: npm test
