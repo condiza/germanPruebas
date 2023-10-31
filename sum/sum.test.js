@@ -18,7 +18,7 @@ test('subtracts 4/2 to equal 2', () => {
 
 describe('Concatenate Strings', () =>{
   test('Contatenate two strings', () =>{
-      expect(operaciones.concatenateStrings('Hello, ', 'worl')).toBe('Hello, world');
+      expect(operaciones.concatenateStrings('Hello, ', 'world')).toBe('Hello, world');
   });
 
   test('Lanza un error si alguno de los argumentos no es una cadena', () => {
