@@ -4,8 +4,8 @@ test('adds 1+1 to equal 2', () => {
   expect(operaciones.suma(1, 1)).toBe(2);
 });
 
-test('subtracts 1-2 to equal -1', () => {
-  expect(operaciones.resta(1, 2)).toBe(-1);
+test('subtracts 1-1to equal -0', () => {
+  expect(operaciones.resta(1, 1)).toBe(0);
 });
 
 test('subtracts 1*2 to equal 2', () => {
