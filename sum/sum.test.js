@@ -4,7 +4,7 @@ test('adds 1+1 to equal 2', () => {
   expect(operaciones.suma(1, 1)).toBe(2);
 });
 
-test('subtracts 1-1to equal ', () => {
+test('subtracts 1-1to equal -0', () => {
   expect(operaciones.resta(1, 1)).toBe(0);
 });
 
