@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_condiza_germanPruebas_1717000297425-pr-trigger-input-set
+  identifier: Build_condiza_germanPruebas_1717000297425prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: prueba_dos
+  pipeline:
+    identifier: Build_condiza_germanPruebas_1717000297425
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
