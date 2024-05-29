@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_condiza_germanPruebas_1717000474562-push-trigger-input-set
+  identifier: Build_condiza_germanPruebas_1717000474562pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: prueba_dos
+  pipeline:
+    identifier: Build_condiza_germanPruebas_1717000474562
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
